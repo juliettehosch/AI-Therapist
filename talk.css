@@ -1,0 +1,235 @@
+body,html{
+	height: 100%;
+	margin: 0;
+	background: rgb(44, 47, 59);
+   background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
+	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Bebas Neue', sans-serif;
+        
+        
+      }
+
+.navbar {
+    background: #040504;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  #navbar__logo {
+    background-color: #3120b7;
+    background-image: linear-gradient(to top, #1474ac 0%, #5a45e1 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .fa-comments {
+    margin-right: 0.5rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+  }
+
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #3120b7;
+    color: #fff;
+  }
+
+  .button:hover {
+    background: #95c6c1;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #95c6c1;
+    transition: all 0.3s ease;
+  }
+
+  
+  
+  
+  .main {
+    background-color: #141414;
+  }
+  
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 70vh;
+    background-color: #131313;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .main__content {
+    color: #fff;
+    width: 100%;
+  }
+  
+  .main__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+
+  
+  .main__content p {
+    margin-top: 10rem;
+    font-size: 2rem;
+    font-weight: 700;
+    position: static;
+  }
+
+#mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .main__img--container {
+    text-align: center;
+  }
+  
+  #main__img {
+    height: 80%;
+    width: 80%;
+    margin-left: 30rem;
+    margin-top: -7rem;
+    position: static;
+    transform: scale(1.2);
+  }
+
+@media(max-width: 576px){
+	.contacts_card{
+	margin-bottom: 15px;
+}
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .main__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+  }
+
+  .main__content h1{
+    text-align: center;
+    margin-bottom: 4rem;
+    
+  }
+
+ 
+.main__btn:hover:after {
+  width: 100%;
+}
+
+.main__img--container {
+  text-align: center;
+}
+
+#main__img {
+  height: 80%;
+  width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
+     margin-left: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+} } }
